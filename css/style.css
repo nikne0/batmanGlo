@@ -23,6 +23,7 @@ margin: auto;
     justify-content: space-between;
 /*    Внутренний отступ сверху */
     padding-top: 45px;
+    margin-bottom: 30%;
 }
 
 .logo {
@@ -94,3 +95,165 @@ margin: auto;
     /* Выравнивание картинки*/
     object-fit: cover;
 }
+
+.title {
+    /* Сбрасываем отступы*/
+    margin: 0;
+    font-family: 'Playfair Display', serif;
+    font-size: 48px;
+    line-height: 64px;
+    margin-bottom: 7px;
+}
+
+.title-en {
+    /*делаем строчный тег блочным*/
+    display: inline-block;
+    font-size: 20px;
+    line-height: 23px;
+    color: #787878;
+    margin-bottom: 30px;
+
+}
+
+.info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 100px;
+
+}
+
+.movie-info {
+    display: flex;
+    align-items: center;
+
+}
+
+.tag {
+    display: inline-block;
+    font-size: 16px;
+    line-height: 19px;
+    color: #333333;
+    background: #FFFFFF;
+    border-radius: 3px;
+    padding: 5px 10px;
+    margin-right: 20px;
+}
+
+.country {
+    font-size: 16px;
+    line-height: 19px;
+    margin-right: 33px;
+}
+
+.play {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+/*    Убираем подчеркивание техта*/
+    text-decoration: none;
+
+}
+
+/*Создаем псевдо-элемент*/
+.play:before {
+    content: '';
+    width: 30px;
+    height: 30px;
+    background-image: url("../img/play.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    margin-right: 15px;
+
+}
+
+.more {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.more::after {
+    content: '';
+    width: 30px;
+    height: 30px;
+    background-image: url("../img/play.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    margin-left: 15px;
+    transform: rotate(90deg);
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    background: #FFFFFF;
+    border-radius: 3px;
+    color: #000000;
+    padding: 43px 50px;
+
+}
+
+.poster {
+    display: block;
+    margin-top: -80px;
+    margin-bottom: 20px;
+}
+
+.button {
+    padding: 10px 44px;
+    font-size: 14px;
+    line-height: 16px;
+    background: #FF8F27;
+    color: #FFFFFF;
+    border: none;
+}
+
+.actors-title {
+    padding-left: 15px;
+    font-weight: 900;
+    font-size: 16px;
+    line-height: 150%;
+    color: #000000;
+    margin-bottom: 10px;
+}
+
+.actors-list {
+    margin: 0;
+    list-style: none;
+    padding-left: 15px;
+    text-decoration: underline;
+}
+
+.full-info {
+    flex: 0.97;
+}
+
+.full-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.tabs-content {
+    margin-right: 70px;
+}
+
+.tabs-item {
+    background-color: #FFFFFF;
+    text-decoration: none;
+    margin-right: 40px;
+    font-size: 18px;
+    line-height: 21px;
+    color: #0A090A;
+
+}
+
+.tabs-item-active {
+    color: #FF8F27;
+}
+
