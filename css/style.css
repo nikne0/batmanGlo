@@ -195,13 +195,17 @@ margin: auto;
     background: #FFFFFF;
     border-radius: 3px;
     color: #000000;
-    padding: 43px 50px;
+    padding: 3% 4%;
 
+}
+
+.short-info {
+    margin-right: 3%;
 }
 
 .poster {
     display: block;
-    margin-top: -80px;
+    margin-top: -40%;
     margin-bottom: 20px;
 }
 
@@ -228,6 +232,7 @@ margin: auto;
     list-style: none;
     padding-left: 15px;
     text-decoration: underline;
+    line-height: 150%;
 }
 
 .full-info {
@@ -243,17 +248,189 @@ margin: auto;
     margin-right: 70px;
 }
 
+.tabs {
+    display: flex;
+    align-items: center;
+    margin-bottom: 4%;
+}
+
 .tabs-item {
     background-color: #FFFFFF;
     text-decoration: none;
-    margin-right: 40px;
     font-size: 18px;
     line-height: 21px;
     color: #0A090A;
+}
 
+.tabs-item:not(:last-child) {
+    margin-right: 4%;
 }
 
 .tabs-item-active {
     color: #FF8F27;
+}
+
+.text {
+    margin-top: 0px;
+    font-size: 16px;
+    line-height: 140%;
+}
+
+.subscribe-title {
+    font-weight: 900;
+    font-size: 16px;
+    line-height: 150%;
+    color: #000000;
+    margin-bottom: 14px;
+    margin-top: 0;
+}
+
+.subscribe-input {
+    flex: 1;
+    /*Фоновый цвет*/
+    background: rgba(196, 196, 196, 0.5);
+    /* Скругление */
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    /*    Внутренний отстувы сверху*/
+    padding-top: 12px;
+    /*    Внутренний отстувы снизу*/
+    padding-bottom: 12px;
+    /*    Внутренний отстувы слева*/
+    padding-left: 18px;
+    /*    Внутренний отстувы справа*/
+    padding-right: 18px;
+    /*    Убираем рамку*/
+    border: none;
+    color: #AEAEAE;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.subscribe-form {
+    display: flex;
+    margin-bottom: 48px;
+}
+
+.subscribe-button {
+    display: flex;
+    background: FF8F27;
+    border-radius: 0px 5px 5px 0px;
+    border: none;
+   padding: 0;
+}
+
+@media (max-width: 1200px) {
+    .container {
+        max-width: 960px;
+    }
+
+    .tabs-item {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 992px) {
+    .container {
+        max-width: 740px;
+    }
+
+    .tabs {
+        flex-wrap: wrap;
+        font-size: 16px;
+    }
+
+    .tabs-item {
+        flex-basis: 20%;
+        line-height: 2;
+    }
+
+    .full-content {
+        /* Если не помещается тогда срабаиывает перенос*/
+        flex-wrap: wrap;
+    }
+
+    .tabs-content {
+        margin-bottom: 5%;
+    }
+
+    .text {
+        font-size: 14px;
+
+    }
+    .actors-list {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 540px;
+    }
+
+    .more {
+        display: none;
+    }
+
+    .tabs-item {
+        flex-basis: 33%;
+        font-size: 16px;
+    }
+
+    .tabs-content {
+        margin-right: 0;
+    }
+
+
+}
+
+@media (max-width: 578px) {
+    .container {
+        width: 90%;
+    }
+
+    .header {
+        flex-wrap: wrap;
+    }
+
+    .search {
+        flex-basis: 100%;
+        order: 3;
+        margin-top: 5%;
+    }
+
+    .content {
+        flex-wrap: wrap;
+    }
+
+    .short-info {
+        margin-bottom: 5%;
+        margin-right: 0;
+    }
+
+    .actors-list, .actors-title {
+        display: none;
+    }
+
+    .movie-info {
+        flex-wrap: wrap;
+    }
+
+    .play {
+        flex-basis: 100%;
+        margin-top: 10%;
+    }
+
+    .poster {
+        margin-top: -20%;
+        width: 100%;
+        display: inline-block;
+    }
+
+    .button {
+        width: 100%;
+    }
+
+
 }
 
