@@ -245,6 +245,7 @@ margin: auto;
 }
 
 .tabs-content {
+    display: none;
     margin-right: 70px;
 }
 
@@ -252,6 +253,10 @@ margin: auto;
     display: flex;
     align-items: center;
     margin-bottom: 4%;
+}
+
+.visible {
+    display: block;
 }
 
 .tabs-item {
